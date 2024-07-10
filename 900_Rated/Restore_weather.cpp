@@ -1,3 +1,4 @@
+// https://codeforces.com/contest/1833/problem/B
 #include <iostream>
 #include <bits/stdc++.h>
 
