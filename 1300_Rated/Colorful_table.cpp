@@ -19,30 +19,30 @@ int main()
             st.insert(arr[i]);
         }
 
-        map<ll, pair<int, int>> mp;
+        // map<ll, pair<ll, ll>> mp;
         int p = 1;
-        int left = 0;
-        int right = n - 1;
-        while (left <= right)
-        {
-            if (arr[left] >= p && arr[right] >= p)
-            {
-                mp[p] = {left, right};
-                p++;
-            }
-            else if (arr[left] < p)
-                left++;
-            else if (arr[right] < p)
-                right--;
-        }
+        // int left = 0;
+        // int right = n - 1;
+        // while (left <= right)
+        // {
+        //     if (arr[left] >= p && arr[right] >= p)
+        //     {
+        //         mp[p] = {left, right};
+        //         p++;
+        //     }
+        //     else if (arr[left] < p)
+        //         left++;
+        //     else if (arr[right] < p)
+        //         right--;
+        // }
 
-        for (int i = 1; i <= k; i++)
-        {
-            if (st.find(i) == st.end())
-                cout << 0 << " ";
-            else
-                cout << 2 * (mp[i].second - mp[i].first + 1) << " ";
-        }
+        // for (int i = 1; i <= k; i++)
+        // {
+        //     if (st.find(i) == st.end())
+        //         cout << 0 << " ";
+        //     else
+        //         cout << 2 * (mp[i].second - mp[i].first + 1) << " ";
+        // }
         cout << endl;
     }
 }
